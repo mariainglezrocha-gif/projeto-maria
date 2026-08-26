@@ -16,6 +16,28 @@
     --cor-botao:#FFFFFF;
 }
 
+.tema-escuro p {
+    color: var(--cor-texto);
+}
+
+.tema-escuro header p {
+    color: var(--cor-contraste);
+    font-weight: 600;
+}
+
+.tema-escuro a {
+    color: var(--cor-secudndaria);
+}
+
+.tema-escuro button {
+    border: none;
+    background-color: var(--cor-botao);
+    color: var(--cor-texto);
+}
+
+.tema-escuro article {
+    background-color: #f7eeee0c;
+}
 
 
 .tema-escuro h2 {
@@ -24,6 +46,10 @@
 
   .tema-escuro .artigo-autor {
     color: var(--cor-segundaria);
+}
+
+.tema-escuro .btn-tema-escuro {
+    background-color: var(--cor-secudndaria);
 }
 
 body {

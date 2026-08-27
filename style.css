@@ -7,6 +7,11 @@
     --cor-botao:#FFFFFF;
 }
 
+
+* {
+    transition: background-color 0.3s ease;
+}
+
 .tema-escuro {
     --cor-primaria:#d69793;
     --cor-secudndaria:#973f38;
@@ -81,8 +86,7 @@ header {
 
     article {
         display: flex;
-
-        border: 1px solid var(--cor-primaria);
+        box-shadow: 0 2px 6px #00000005 rgba (0, 0, 0, 0.3 );
 
         margin: 16px;
         gap: 16px;

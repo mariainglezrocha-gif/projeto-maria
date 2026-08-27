@@ -1,4 +1,4 @@
-// 1. Contador de reações nos artigos
+// Contadores de reações
 const botoesInteracao = document.querySelectorAll("article button");
 
 botoesInteracao.forEach(function (botao) {
@@ -10,17 +10,19 @@ botoesInteracao.forEach(function (botao) {
     });
 });
 
-// 2. Alternar para o Modo Escuro
+// Botão de Modo Escuro
 const btnTema = document.querySelector(".btn-tema-escuro");
 
-btnTema.addEventListener("click", function () {
-    // Adiciona ou remove a classe 'tema-escuro' da tag <body>
-    document.body.classList.toggle("tema-escuro");
+if (btnTema) {
+    btnTema.addEventListener("click", function () {
+        document.body.classList.toggle("tema-escuro");
 
-    // Altera o ícone do botão dependendo do tema ativo
-    if (document.body.classList.contains("tema-escuro")) {
-        btnTema.textContent = "☀️";
-    } else {
-        btnTema.textContent = "🌗";
-    }
-});
+        if (document.body.classList.contains("tema-escuro")) {
+            btnTema.textContent = "☀️";
+        } else {
+            btnTema.textContent = "🌗";
+        }
+    });
+} else {
+    console.error("Botão .btn-tema-escuro não foi encontrado no HTML.");
+}

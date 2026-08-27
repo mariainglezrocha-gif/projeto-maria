@@ -109,7 +109,7 @@ header {
         font-weight: bold;
     }
 
-.bt-tema-escuro{
+.btn-tema-escuro {
     position: fixed;
     bottom: 16px;
     right: 16px;
@@ -119,4 +119,4 @@ header {
     border-radius: 50%;
 }
 
-  coloque o modo escuro no codico
+  
